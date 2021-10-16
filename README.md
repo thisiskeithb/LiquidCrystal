@@ -1,11 +1,29 @@
-= Liquid Crystal Library for Arduino =
+# Liquid Crystal OLED Library for Arduino
+
+Winstar WEH002004 20x4 OLED LCD fix for Marlin `2.0.7.2` or newer on LPC1768/9
+
+## Installation
+
+Locate `MarlinFirmware/ini/lpc176x.ini` and replace the following:
+
+```ini
+custom_marlin.USES_LIQUIDCRYSTAL = LiquidCrystal=[some url here]
+```
+
+with:
+
+```ini
+custom_marlin.USES_LIQUIDCRYSTAL = LiquidCrystal=https://github.com/thisiskeithb/LiquidCrystalOLED/archive/1.0.8.zip
+```
+
+## About
 
 This library allows an Arduino board to control LiquidCrystal displays (LCDs) based on the Hitachi HD44780 (or a compatible) chipset, which is found on most text-based LCDs.
 
 For more information about this library please visit us at
 http://www.arduino.cc/en/Reference/LiquidCrystal
 
-== License ==
+## License
 
 Copyright (C) 2006-2008 Hans-Christoph Steiner. All rights reserved.
 Copyright (c) 2010 Arduino LLC. All right reserved.
